@@ -1,0 +1,55 @@
+---
+confirmation:
+  subject: "Kuberoke registration confirmed."
+  sender: "registration@mail.kuberoke.love"
+  textContent: |
+    Thank you for registering for Kuberoke! You have now been added to the guest list.
+
+    When a slot becomes available, we will send out a QR code which will let you enter the venue.
+
+    Once you have received your QR code, you have a limited amount of time to arrive.
+
+    If you're late and the venue is full, you can queue at the door or come back at a later time.
+    We will fill the venue from the queue first, before sending out new QR codes.
+
+    If the venue is not full and you have a valid QR code, you can enter even if you're late.
+
+    See you soon at Kuberoke!
+  htmlContent: |
+    Thank you for registering for Kuberoke! You have now been added to the guest list.
+    <br>
+    When a slot becomes available, we will send out a QR code which will let you enter the venue.
+    <br>
+    Once you have received your QR code, you have a limited amount of time to arrive.
+    <br>
+    If you're late and the venue is full, you can queue at the door or come back at a later time.
+    We will fill the venue from the queue first, before sending out new QR codes.
+    <br>
+    If the venue is not full and you have a valid QR code, you can enter even if you're late.
+    <br>
+    See you soon at Kuberoke!
+invitation:
+  subject: "Kuberoke QR code"
+  sender: "registration@mail.kuberoke.love"
+  textContent: |
+    Welcome to Kuberoke!
+
+    Attached to this email is the QR code which will let you enter the venue.
+
+    You now have 15 minutes to arrive at [TEST LOCATION].
+
+    If you're late and the venue is full, you can queue at the door or come back at a later time.
+    We will fill the venue from the queue first, before sending out new QR codes.
+
+    If the venue is not full and you have a valid QR code, you can enter even if you're late.
+  htmlContent: |
+    Welcome to Kuberoke!
+    <br>
+    Attached to this email is the QR code which will let you enter the venue.
+    <br>
+    You now have 15 minutes to arrive at [TEST LOCATION].
+    <br>
+    If you're late and the venue is full, you can queue at the door or come back at a later time.
+    We will fill the venue from the queue first, before sending out new QR codes.
+    <br>
+    If the venue is not full and you have a valid QR code, you can enter even if you're late.
