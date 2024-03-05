@@ -4,6 +4,7 @@ function handler(event) {
   // The Base64-encoded Auth string that should be present.
   // base64([username]:[password])
 
+
   // TODO change this (example below is kuberoke:fun4days)
 
   var expected = "ABC123456DEF"; //"Basic a3ViZXJva2U6ZnVuNGRheXM="

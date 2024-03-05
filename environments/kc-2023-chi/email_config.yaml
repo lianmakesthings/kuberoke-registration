@@ -1,0 +1,63 @@
+---
+confirmation:
+  subject: "Kuberoke registration confirmed."
+  sender: "registration@mail.kuberoke.love"
+  textContent: |
+    Thank you for registering for Kuberoke! You have now been added to the guest list.
+
+    When a slot becomes available, we will send out a QR code which will let you enter the venue.
+
+    NOTE: WE WILL ONLY ADMIT PEOPLE WITH A QR CODE. We will not admit friends who tag along with
+    someone with a code, or someone who has registered but not received their code. Space at the venue
+    is limited and we thank you for respecting your fellow attendees and the volunteers working the event.
+
+    Once you have received your QR code, you have a limited amount of time to arrive.
+
+    If you're late and the venue is full, you can queue at the door or come back at a later time.
+    We will fill the venue from the queue first, before sending out new QR codes.
+
+    If the venue is not full and you have a valid QR code, you can enter even if you're late.
+
+    See you soon at Kuberoke!
+  htmlContent: |
+    Thank you for registering for Kuberoke! You have now been added to the guest list.
+    <br>
+    When a slot becomes available, we will send out a QR code which will let you enter the venue.
+    <br>
+    NOTE: WE WILL ONLY ADMIT PEOPLE WITH A QR CODE. We will not admit friends who tag along with
+    someone with a code, or someone who has registered but not received their code. Space at the venue
+    is limited and we thank you for respecting your fellow attendees and the volunteers working the event.
+    <br>
+    Once you have received your QR code, you have a limited amount of time to arrive.
+    <br>
+    If you're late and the venue is full, you can queue at the door or come back at a later time.
+    We will fill the venue from the queue first, before sending out new QR codes.
+    <br>
+    If the venue is not full and you have a valid QR code, you can enter even if you're late.
+    <br>
+    See you soon at Kuberoke!
+invitation:
+  subject: "Kuberoke QR code"
+  sender: "registration@mail.kuberoke.love"
+  textContent: |
+    Welcome to Kuberoke!
+
+    Attached to this email is the QR code which will let you enter the venue.
+
+    You now have 45 minutes to arrive at KaraFun.
+
+    If you're late and the venue is full, you can queue at the door or come back at a later time.
+    We will fill the venue from the queue first, before sending out new QR codes.
+
+    If the venue is not full and you have a valid QR code, you can enter even if you're late.
+  htmlContent: |
+    Welcome to Kuberoke!
+    <br>
+    Attached to this email is the QR code which will let you enter the venue.
+    <br>
+    You now have 50 minutes to arrive at KaraFun.
+    <br>
+    If you're late and the venue is full, you can queue at the door or come back at a later time.
+    We will fill the venue from the queue first, before sending out new QR codes.
+    <br>
+    If the venue is not full and you have a valid QR code, you can enter even if you're late.

@@ -44,8 +44,8 @@ var __Html5QrcodeLibrary__;(()=>{var t={449:function(t,e,r){!function(t){"use st
   let allGuests
 
   // TODO update your ticket codes here, keep undefined for no ticket code case
-  const ticketCodes = ['FREINDS_OF_KUBEROKE', undefined]
-  // TODO add API GW api key here
+  const ticketCodes = ['SPONSOR_1_CODE', 'SPONSOR_2_CODE', 'FRIENDS_OF_KUBEROKE', undefined]
+    // TODO add API GW api key here
   const API_KEY = ''
 
   document.querySelector('#invite').addEventListener('submit', async e => {
@@ -62,8 +62,8 @@ var __Html5QrcodeLibrary__;(()=>{var t={449:function(t,e,r){!function(t){"use st
     }
 
     if (e.submitter.id == 'send') {
-      // TODO add ID and STAGE (e.g. kuberoke-test-prod) here
-      const response = await fetch('https://[ID].execute-api.eu-west-1.amazonaws.com/[STAGE]/invite', {
+        // TODO add ID and STAGE (e.g. kuberoke-test-prod) here
+      const response = await fetch('https://a50jc5jboe.execute-api.us-east-1.amazonaws.com/kuberoke-kc-2023-chi-prod/invite', {
         method: "POST",
         mode: "cors",
         cache: "no-cache",
@@ -86,8 +86,8 @@ var __Html5QrcodeLibrary__;(()=>{var t={449:function(t,e,r){!function(t){"use st
   })
 
   const loadGuestList = async () => {
-    // TODO add ID and STAGE (e.g. kuberoke-test-prod) here
-    const response = await fetch('https://[ID].execute-api.eu-west-1.amazonaws.com/[STAGE]/reservation', {
+      // TODO add ID and STAGE (e.g. kuberoke-test-prod) here
+    const response = await fetch('https://a50jc5jboe.execute-api.us-east-1.amazonaws.com/kuberoke-kc-2023-chi-prod/reservation', {
         method: "GET",
         mode: "cors",
         cache: "no-cache",
@@ -130,8 +130,9 @@ var __Html5QrcodeLibrary__;(()=>{var t={449:function(t,e,r){!function(t){"use st
 
   // TODO add public key here
   const publicKey = `-----BEGIN PUBLIC KEY-----
-  XXXX
-  -----END PUBLIC KEY-----`
+MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAPDGL48RT3HfIfvuAdCE9oUBQ6nM6t+P
+qFFo5+EviJb2FJc9AQ1nQXTt/mXu9BtO4/tP1Q2GeKTSj6UQWRb64rMCAwEAAQ==
+-----END PUBLIC KEY-----`
 
   function str2ab(str) {
     const buf = new ArrayBuffer(str.length);

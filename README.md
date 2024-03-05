@@ -18,14 +18,18 @@ Feel free to use the code in this repo as you see fit. Spread the kuberoke love!
 - update `env.yaml` to select your desired AWS region
 - inside the environment, update `ticket_codes` in the inputs inside `terragrunt.hcl` - all inputs will be upper-cased
 - configure `event_start_timestamp` (JS timestamp) and `default_minutes_to_arrive` in your inputs
+  - To get the timestamp, run `$ node` in a terminal
+  - Run `const start = new Date("03-20-2024T20:00:00.00Z")` for the correct time/date of your event in GMT.
+  - Run `start.getValue()`
 - update `email_config.yaml` with the desired configuration for your emails
 - run `npm install` in `/src/lambda/dynamoStreamhandler`
-- create a docker container `docker run -it -e SENDGRID_API_KEY="SG.123" -v ~/.ssh:/root/.ssh -v ~/.aws:/root/.aws -v /path/to/repo:/data devopsinfra/docker-terragrunt:aws-tf-1.3.9-tg-0.44.4 /bin/bash`
+- create a docker container `docker run -it -e SENDGRID_API_KEY="<api key>" -v ~/.ssh:/root/.ssh -v ~/.aws:/root/.aws -v ./:/data devopsinfra/docker-terragrunt:aws-tf-1.3.9-tg-0.44.4 /bin/bash`
 - inside the container, make sure your AWS credentials are loaded correctly (e.g. set `AWS_PROFILE` env var in the container shell or in the command above if not using `default` profile)
 - `cd` into your environment and run `terragrunt apply --terragrunt-source /data//terraform` to deploy your local code to the AWS account
 - execute `src/generate_key.js` and put the public key into `website/index.html`
 - put the private key into the secret inside AWS secrets manager (`kuberoke-[event]-keypair`, format: `{"PRIVATE_KEY":"[value from script in previous step]"}` - make sure when copying the value you don't copy any extra characters! The key should not contain spaces and the linebreaks should be replaced by `\n` in the value)
 - fill in the other missing values in `website/index.html` (search for 'TODO')
+  - Get your API Key from the AWS API Gateway console, under the API Keys menu
 - set a basic auth verification value in `website/auth-function.js`
 
 ## TODOs
